@@ -1,0 +1,41 @@
+html,body {
+	height: 100%;
+	font-size: 14px;
+	font-family: "Microsoft yahei","Century Gothic";
+}
+body,p,h1,h2,h3,h4,h5,h6,
+dl,dt,dd,ul,ol,li,
+form,input,textarea,button,
+pre,img {
+	margin: 0;
+	padding: 0;
+}
+ul,ul li {
+	list-style: none;
+}
+img {
+	border: 0;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+input,textarea,select {
+	font-size: 100%;
+	outline: 0;
+	resize: none;
+	font-family: "Microsoft yahei";
+}
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -60px;
+	padding: 0 0 60px;
+}
+#footer {
+	height: 60px;
+	background-color: #ddd;
+}

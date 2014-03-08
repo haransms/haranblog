@@ -3,20 +3,53 @@
 <head>
 	<meta charset="UTF-8" />
 	<title><{$title}>_<{:C('SITE_TITLE')}></title>
+	<meta name="keywords" content="<{:C('SITE_KEYWORDS')}>">
+	<meta name="description" content="<{:C('SITE_DESCRIPTION')}>">
+	<meta name="copyright" content="<{:C('SITE_COPYRIGHT')}>">
+	<meta name="author" content="<{:C('SITE_AUTHOR')}>">
 	<link rel="stylesheet" href="__PUBLIC__/css/core.css" />
+	<link rel="stylesheet" href="__PUBLIC__/css/grid.css" />
 	<link rel="stylesheet" href="__PUBLIC__/css/default.css" /><block name="headcss"></block><block name="headjs"></block>
 </head>
 <body>
 	<div id="wrap">
-		<div id="nav">
-			
+		<div class="wrap_box use_your_illusion" id="nav_box">
+			<div class="container">
+				<div class="grid_40" id="nav">
+					<a href="__APP__" class="brand"></a>
+					<span class="summary"><{:C('SITE_SUMMARY')}></span>
+					<ul>
+						<li><a href="__APP__" <if condition="MODULE_NAME eq 'Home' && CONTROLLER_NAME eq 'Index' && ACTION_NAME eq 'index'">class="active"</if>>首页</a></li>
+						<li><a href="<{:U('Home/Article/index')}>" <if condition="MODULE_NAME eq 'Home' && CONTROLLER_NAME eq 'Article' && ACTION_NAME eq 'index'">class="active"</if>>文章</a></li>
+						<li><a href="<{:U('Home/Category/index')}>" <if condition="MODULE_NAME eq 'Home' && CONTROLLER_NAME eq 'Category' && ACTION_NAME eq 'index'">class="active"</if>>分类</a></li>
+						<li><a href="<{:U('Home/About/index')}>" <if condition="MODULE_NAME eq 'Home' && CONTROLLER_NAME eq 'About' && ACTION_NAME eq 'index'">class="active"</if>>关于</a></li>
+						<li><a href="<{:U('Home/Contact/index')}>" <if condition="MODULE_NAME eq 'Home' && CONTROLLER_NAME eq 'Contact' && ACTION_NAME eq 'index'">class="active"</if>>联系</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
+
+		<div class="wrap_box back" style="height:1000px;"></div>
+
 		<div id="main">
-			
+			<block name="main"></block>
 		</div>
 	</div>
+
+	<div class="cl"></div>
+
+	<!-- 底部开始 -->
 	<div id="footer">
 		
 	</div>
+	<!-- 底部结束 -->
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.scrollUp.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/Home/front.js"></script>
+<!--[if IE 6]><script type="text/javascript" src="__PUBLIC__/js/iepng.js"></script>
+<script type="text/javascript">
+	DD_belatedPNG.fix('.brand','background');
+</script><![endif]--><block name="footerjs"></block>
 </body>
 </html>

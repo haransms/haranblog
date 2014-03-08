@@ -1,3 +1,77 @@
 body{
-	background: #FBFBFB;
+	background: #F4F4F4;
+}
+#nav_box{
+	position: relative;
+	height: 60px;
+}
+#nav{
+	position: relative;
+	height: 60px;
+}
+#nav a.brand{
+	display: block;
+	width: 200px;
+	height: 60px;
+	float: left;
+	background: url(../images/logo.png) no-repeat;
+}
+#nav span.summary{
+	display: block;
+	width: 300px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+	color: #F4F4F4;
+	float: left;
+}
+#nav ul{
+	position: relative;
+	display: block;
+	float: right;
+	height: 60px;
+	line-height: 60px;
+}
+#nav ul li{
+	display: block;
+	float: left;
+	font-size: 24px;
+	width: 120px;
+	height: 60px;
+}
+#nav ul li a{
+	display: block;
+	text-align: center;
+	width: 120px;
+	height: 60px;
+	color: #F4F4F4;
+}
+#nav ul li a.active{
+	background: #0075c5;
+}
+#nav ul li a:hover{
+	text-decoration: none;
+	background: #0075c5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#myAwesomeElement {
+	margin: 0 auto;
+	background: #F4F4F4;
+	height: 300px;
+	padding: 10px;
+	border-bottom: 1px solid #E0E0E0;
+	box-shadow: #FFF 0 1px;
+    behavior: url(./Public/js/PIE.htc);
 }

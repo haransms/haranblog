@@ -7,8 +7,4 @@ class IndexController extends Controller {
 		$this->title = "首页";
 		$this->display();
 	}
-	
-	public function test () {
-		echo ACTION_NAME;
-	}
 }

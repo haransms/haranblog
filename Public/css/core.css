@@ -32,10 +32,35 @@ input,textarea,select {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -60px;
-	padding: 0 0 60px;
+	margin: 0 auto -300px;
+	padding: 0 0 300px;
 }
 #footer {
-	height: 60px;
-	background-color: #ddd;
+	height: 300px;
+	background-color: #E4E4E4;
+}
+#scrollUp {
+  bottom: 20px;
+  right: 20px;
+  height: 38px;  /* Height of image */
+  width: 38px; /* Width of image */
+  background: url(../../Public/images/top.png) no-repeat;
+}
+.cl{
+	height:10px;
+	visibility: hidden;
+	overflow:hidden;
+	clear:both;
+}
+.wrap_box{
+	width: 100%;
+}
+.cubes{
+	background: url(../images/background/cubes.png);
+}
+.escheresque_ste{
+	background: url(../images/background/escheresque_ste.png);
+}
+.use_your_illusion{
+	background: url(../images/background/use_your_illusion.png);
 }
